@@ -2,6 +2,6 @@
 int main() {
 short a=1, b=2,c;
 c=2a+b;
-std::cout << c,"HelloF";
+std::cout << c,"Hello";
 return 0;
 }
