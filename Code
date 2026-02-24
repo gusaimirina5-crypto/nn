@@ -1,6 +1,7 @@
 #include <iostream>
 int main() {
 short a=1, b=2,c;
-c=1+2;
+c=2a+b;
+std::cout << c;
 return 0;
 }
