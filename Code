@@ -1,7 +1,20 @@
 #include <iostream>
+using namespace std;
 int main() {
-short a=1, b=2,c;
-c=2a+b;
-std::cout << c,"Hello";
-return 0;
+	int a, b, c;
+	int n1, n2, n3, n4, n5, n6;
+	cin >> a >> b >> c;
+	n1 = a + b + c;
+	n2 = a + b * c;
+	n3 = a * b + c;
+	n4 = a * (b + c);
+	n5 = (a + b) * c;
+	n6 = a * b * c;
+	if (n1 > n2 && n1 > n3 && n1 > n4 && n1 > n5 && n1 > n6) cout << n1;
+	if (n2 > n3 && n2 > n4 && n2 > n5 && n2 > n6 && n2 > n1) cout << n2;
+	if (n3 > n4 && n3 > n5 && n3 > n6 && n3 > n1 && n3 > n2) cout << n3;
+	if (n4 > n5 && n4 > n6 && n4 > n1 && n4 > n2 && n4 > n3) cout << n4;
+	if (n5 > n6 && n5 > n1 && n5 > n2 && n5 > n3 && n5 > n4) cout << n5;
+	else cout << n6;
+	return 0;
 }
